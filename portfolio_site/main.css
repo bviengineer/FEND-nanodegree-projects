@@ -1,38 +1,61 @@
-/*
-*Global style rules
-*/
-body {
-    color: #2d3c49;
-}
-
-/*
-*Header text
-*/
-.header-text {
-    text-transform: uppercase;
-    text-align: right;
-}
-
-/*
-*Featured Work Divs
-*/
-.featured-projects {
-    border: 2px solid red;
+/**********************
+    Global rules
+***********************/
+img, embed, object, video {
+    max-width: 100%;
     height: auto;
 }
 
-/*
-*Making content flex
-*/
-.featured-work {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+body {
+    color: #2d3c49;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
 }
 
-/*
-*MEDIA QUERIES
-*/
+/* .responsive-image {
+    max-width: 100%;
+    height: auto;
+} */
+
+#featured-work-h2 {
+    color: #7d97ad;
+}
+
+/*******************
+    Header Styles
+********************/
+.header-text {
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0;
+}
+
+/* #header-imgDiv {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;    */
+}
+
+/***********************
+    Featured Work Divs
+************************/
+.content, .featured-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured-projects {
+    width: 100%;
+    height: auto;    
+    margin-bottom: 0.3em;
+}
+
+
+/***********************
+    MEDIA QUERIES
+************************/
 @media screen and (max-width: 400px) {
     #header-name {
         font-size: 1.3em;
@@ -42,8 +65,7 @@ body {
         font-size: 0.8em;
     }
 
-    #project1, #project2 {
-        width: 50%
-    }
-    
+    .featured-projects {
+        width: 100%
+    }    
 }
