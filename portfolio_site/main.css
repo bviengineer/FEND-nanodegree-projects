@@ -94,25 +94,25 @@ hr {
 
 .featured-work {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    width:100%;
+    height: auto;
+    padding-bottom: 2em;
 }
 
 .featured-projects {
-    width: 100%;
+    width: 33.33%;
+    height: 200px;
+    margin-right: 1em;
+    display: flex;
+    background-color: lightblue;
 }
 
-#project1, #project3 {    
-    margin-bottom: 0.3em;
-    width: 10px;
-    height: 100px;
-    float: left;
+#project1, #project2, #project3 {    
+    width: 100%;
+    height: auto;
 } 
 
-#project2 {
-    width: 100px;
-    height: 50px;
-    float: left;
-} 
 
 /***********************
     MEDIA QUERIES
