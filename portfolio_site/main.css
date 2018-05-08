@@ -1,0 +1,21 @@
+/*
+*Global style rules
+*/
+body {
+    color: #2d3c49;
+}
+
+/*
+*   Header text
+*/
+
+.header-text {
+    text-transform: uppercase;
+    text-align: right;
+}
+
+/*
+*
+*MEDIA QUERIES
+*
+*/
