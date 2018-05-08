@@ -3,7 +3,6 @@
 */
 body {
     color: #2d3c49;
-    margin: 1em;
 }
 
 /*
@@ -25,9 +24,10 @@ body {
 /*
 *Making content flex
 */
-.content {
+.featured-work {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 /*
@@ -45,8 +45,5 @@ body {
     #project1, #project2 {
         width: 50%
     }
-
-    #project3 {
-        width: 100%;
-    }
+    
 }
