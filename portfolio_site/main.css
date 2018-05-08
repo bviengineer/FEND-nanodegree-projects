@@ -3,19 +3,50 @@
 */
 body {
     color: #2d3c49;
+    margin: 1em;
 }
 
 /*
-*   Header text
+*Header text
 */
-
 .header-text {
     text-transform: uppercase;
     text-align: right;
 }
 
 /*
-*
-*MEDIA QUERIES
-*
+*Featured Work Divs
 */
+.featured-projects {
+    border: 2px solid red;
+    height: auto;
+}
+
+/*
+*Making content flex
+*/
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+*MEDIA QUERIES
+*/
+@media screen and (max-width: 400px) {
+    #header-name {
+        font-size: 1.3em;
+    }
+
+    #header-title {
+        font-size: 0.8em;
+    }
+
+    #project1, #project2 {
+        width: 50%
+    }
+
+    #project3 {
+        width: 100%;
+    }
+}
