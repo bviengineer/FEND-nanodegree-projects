@@ -14,6 +14,7 @@ html, body {
 }
 
 body {
+    font-family: 'Didact Gothic', sans-serif;
     color: #2d3c49;
     max-width: 960px;
     margin-left: auto;
@@ -89,7 +90,10 @@ hr {
     Featured Work 
 ************************/
 #featured-work-h2 {
-    color: #7d97ad;
+    color:#dd0a6c;
+    padding-top: 1em;
+    padding-left: 1.5em;
+    margin-bottom: 0;
 }
 
 .featured-work {
@@ -97,21 +101,21 @@ hr {
     flex-wrap: nowrap;
     width:100%;
     height: auto;
-    padding-bottom: 1em;
-    /* background-color: lightsalmon; */
+    padding-bottom: 1em; 
 }
 
 .featured-projects {
     width: 100%;
     height: auto;
-    /* margin-right: 1em; */
     display: flex;
-    /* background-color: lightgray; */
 }
 
 #project1, #project2, #project3 {    
     width: 110%;
     height: 180px;
+    /* border: 1.5px solid #dd0a6c;  */
+    border-radius: 5%;
+    box-shadow: 3px 3px #dd0a6c;
 } 
 
 figcaption {
@@ -121,7 +125,8 @@ figcaption {
 
 a {
     text-decoration: none;
-    color: purple;
+    color: #dd0a6c;
+    font-weight: bold;
 }
 
 
