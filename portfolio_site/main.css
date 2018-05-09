@@ -138,7 +138,7 @@ footer {
 
 
 /***********************
-    MEDIA QUERIES
+    Media Quries
 ************************/
 @media screen and (min-width: 830px) {
     #header-udacity-logo {
@@ -147,6 +147,10 @@ footer {
 
     #header-content {
         padding-right: 1em;
+    }
+
+    #responsive-image {
+        max-width: 100%;
     }
 }
 
@@ -161,7 +165,7 @@ footer {
     }
 
     #header-content {
-        padding-right: 2em;
+        padding-right: 1em;
     }
 
     #responsive-image {
@@ -174,8 +178,131 @@ footer {
         text-align: center;
     }
 
+    figcaption {
+        font-size: 1.3em;
+    }
 }
 
-/* @media screen and (min-width: 700px) {
-     
-} */
+
+@media screen and (min-width: 550px) and (max-width: 699px) {
+    #header-udacity-logo {
+        padding-left: 2em;
+    }
+
+    #header-content {
+        padding-right: 1em;
+    }
+
+    #dev-name {
+        font-size: 1.4em;
+    }
+
+    #dev-title {
+        font-size: 1em;
+    }
+
+    #responsive-image {
+        max-width: 100%;
+        height: 50%;
+    }
+
+    .featured-projects {
+        width: 50%;
+        height: auto;
+        text-align: center;
+    }
+
+    figcaption {
+        font-size: 1.3em;
+    }     
+}
+
+
+@media screen and (min-width: 330px) and (max-width: 549px) {
+    #header-udacity-logo {
+        display: none;
+    }
+
+    #header-content {
+        padding-right: 1em;
+    }
+
+    #dev-name {
+        font-size: 1.1em;
+    }
+
+    #dev-title {
+        font-size: 0.8em;
+    }
+
+    #responsive-image {
+        display: none;
+    }
+
+    #featured-work-h2 {
+        padding-top: 0;
+    } 
+
+    .featured-projects {
+        width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }    
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 549px) {
+    body {
+        max-width: 549px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .featured-projects {
+        width: 65%;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    #header-udacity-logo {
+        display: none;
+    }
+
+    #header-content {
+        padding-right: 1em;
+    }
+
+    #dev-name {
+        font-size: 1.1em;
+    }
+
+    #dev-title {
+        font-size: 0.8em;
+    }
+
+    #responsive-image {
+        display: none;
+    }
+
+    #featured-work-h2 {
+        padding-top: 0;
+    }
+
+    .featured-projects {
+        width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+
+    footer {
+        padding-top: 0em;
+    }
+}
+    
