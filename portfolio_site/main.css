@@ -43,12 +43,7 @@ body {
 
 #udacity-logo {
     max-width: 45%;
-    /* height: 100px; */
 }
-
-/* #header-content {
-    width: 100%;
-} */
 
 .header-text {
     text-transform: uppercase;
@@ -58,6 +53,11 @@ body {
 }
 
 #dev-name {
+    font-weight: normal;
+}
+
+#dev-title {
+    color: #dd0a6c;
     font-weight: normal;
 }
 
@@ -115,18 +115,17 @@ hr {
     height: 180px;
     /* border: 1.5px solid #dd0a6c;  */
     border-radius: 5%;
-    box-shadow: 3px 3px #dd0a6c;
+    box-shadow: 5px 3px #2d3c49;;
 } 
 
 figcaption {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 a {
     text-decoration: none;
     color: #dd0a6c;
-    font-weight: bold;
 }
 
 
