@@ -97,36 +97,42 @@ hr {
     flex-wrap: nowrap;
     width:100%;
     height: auto;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+    /* background-color: lightsalmon; */
 }
 
 .featured-projects {
     width: 100%;
     height: auto;
-    margin-right: 1em;
+    /* margin-right: 1em; */
     display: flex;
-    /* background-color: cornsilk; */
+    /* background-color: lightgray; */
 }
 
-#project1, #project3 {    
-    max-width: 100%;
+#project1, #project2, #project3 {    
+    width: 110%;
     height: 180px;
 } 
 
-#project2 {
-    width: auto;
-    height: 180px;
-}
-
 figcaption {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 a {
     text-decoration: none;
     color: purple;
 }
+
+
+/************************
+    Footer
+************************/
+footer {
+    text-align: center;
+    padding-top: 1em;
+}
+
 
 /***********************
     MEDIA QUERIES
