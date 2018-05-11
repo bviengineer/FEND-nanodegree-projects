@@ -1,6 +1,8 @@
 /**********************
     Global Rules
 ***********************/
+
+/*attribution required?*/
 html{
     margin: 0;
     padding: 0;
@@ -93,7 +95,11 @@ hr {
     width: 33.33%;
     height: auto;
     transition: background-color 0.7s ease;
+    /*CSS transition help: CSS Tricks
+    url: https://css-tricks.com/almanac/properties/t/transition/
+    */
 }
+
 
 .feature-img-div:hover {
     background-color: #2d3c49;
