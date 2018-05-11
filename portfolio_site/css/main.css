@@ -86,12 +86,10 @@ hr {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;  
-    background-color: #7d97ad;
 }
 
 .feature-img-div {
     width: 100%;
-    background-color: yellow;
     height: 100%;
 }
 
