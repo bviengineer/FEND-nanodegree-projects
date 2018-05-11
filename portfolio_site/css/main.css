@@ -25,35 +25,31 @@ body {
 /*******************
     Header Section
 ********************/
-#header-container {
+#header-flex-container {
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding-top: 3em;
-}
-
-#header-udacity-logo, #header-content {
-   width: 100%;
-   height: auto;
-}
-
-#header-udacity-logo {
-    margin-left: -60px;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2em;
 }
 
 #udacity-logo {
-    max-width: 45%;
+    width: 15%;
+    height: 100%;
+}
+
+#name-title-div {
+    text-align: right;
+    line-height: 0em;
 }
 
 .header-text {
-    text-transform: uppercase;
-    text-align: right;
-    margin: 0;
-    color: #2d3c49;
+    text-transform: uppercase;   
 }
 
 #dev-name {
     font-weight: normal;
+    color: #2d3c49;
 }
 
 #dev-title {
