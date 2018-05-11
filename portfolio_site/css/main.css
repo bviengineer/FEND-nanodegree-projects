@@ -1,7 +1,7 @@
 /**********************
     Global Rules
 ***********************/
-html, body {
+html{
     margin: 0;
     padding: 0;
     height: 100%;
@@ -31,7 +31,7 @@ body {
 }
 
 .fa-leaf {
-    font-size: 4em;
+    font-size: 3em;
     height: auto;
     color: #dd0a6c;
 }
@@ -44,7 +44,6 @@ body {
 #name-title-div {
     text-align: right;
     line-height: 0em;
-    /* padding-right: 2em; */
 }
 
 .header-text {
@@ -54,10 +53,12 @@ body {
 #dev-name {
     font-weight: normal;
     color: #2d3c49;
+    font-size: 1.5em;
 }
 
 #dev-title {
     color: #dd0a6c;
+    font-size: 1em;
 }
 
 hr {
