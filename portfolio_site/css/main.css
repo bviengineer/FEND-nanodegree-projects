@@ -218,7 +218,7 @@ footer {
 }
 
 
-@media screen and (min-width: 330px) and (max-width: 549px) {
+@media screen and (min-width: 291px) and (max-width: 549px) {
     #header-udacity-logo {
         display: none;
     }
@@ -254,7 +254,7 @@ footer {
 }
 
 
-@media screen and (min-width: 400px) and (max-width: 549px) {
+@media screen and (min-width: 291px) and (max-width: 549px) {
     body {
         max-width: 549px;
         margin-left: auto;
@@ -267,7 +267,7 @@ footer {
 }
 
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 290px) {
     #header-udacity-logo {
         display: none;
     }
