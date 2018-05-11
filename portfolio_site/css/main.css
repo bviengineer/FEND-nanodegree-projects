@@ -92,10 +92,17 @@ hr {
 .feature-img-div {
     width: 33.33%;
     height: auto;
+    transition: background-color 0.7s ease;
+}
+
+.feature-img-div:hover {
+    background-color: #2d3c49;
+    border-radius: 10px;
+    opacity: 0.7;
 }
 
 #project1, #project2, #project3 {    
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 5px 3px #2d3c49;
