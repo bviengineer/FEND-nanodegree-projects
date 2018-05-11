@@ -28,10 +28,16 @@ body {
     padding-top: 2em;
 }
 
-#udacity-logo {
+.fa-leaf {
+    font-size: 4em;
+    height: auto;
+    color: #dd0a6c;
+}
+
+/* #udacity-logo {
     width: 20%;
     height: 100%;
-}
+} */
 
 #name-title-div {
     text-align: right;
@@ -50,7 +56,6 @@ body {
 
 #dev-title {
     color: #dd0a6c;
-    font-weight: normal;
 }
 
 hr {
