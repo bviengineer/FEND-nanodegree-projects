@@ -26,6 +26,8 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     padding-top: 2em;
+    /* padding-right: 1em;
+    padding-left: 1em; */
 }
 
 .fa-leaf {
@@ -42,7 +44,7 @@ body {
 #name-title-div {
     text-align: right;
     line-height: 0em;
-    padding-right: 2em;
+    /* padding-right: 2em; */
 }
 
 .header-text {
