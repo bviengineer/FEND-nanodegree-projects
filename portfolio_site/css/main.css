@@ -1,54 +1,40 @@
 /**********************
     Global Rules
 ***********************/
-
-/*attribution required?*/
-html{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
 body {
     font-family: 'Didact Gothic', sans-serif;
     color: #2d3c49;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
 /*******************
     Header Section
 ********************/
-#header-flex-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    align-items: flex-end;
+.container {
     padding-top: 2em;
 }
 
 .fa-leaf {
     font-size: 3em;
-    height: auto;
     color: #dd0a6c;
-}
-
-#name-title-div {
-    text-align: right;
-    line-height: 0em;
+    height: auto;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 .header-text {
-    text-transform: uppercase;   
+    text-transform: uppercase; 
+    text-align: right;  
 }
 
 #dev-name {
     font-weight: normal;
     color: #2d3c49;
-    font-size: 1.5em;
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0;
+    padding-top: 2em;
 }
 
 #dev-title {
@@ -58,48 +44,38 @@ body {
 
 hr {
     border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #7d97ad;
 }
 
 
 /********************
     Main Section
 *********************/
-hr {
-    background-color: #7d97ad;
-    width: 100%;
-    height: 2px;
-}
-
 #main-img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* featured work styles begin here*/
 #featured-work-h2 {
     color:#dd0a6c;
+    font-size: 2em;
     margin-bottom: 0;
-}
-
-.featured-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;  
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 .feature-img-div {
-    width: 33.33%;
-    height: auto;
     transition: background-color 0.7s ease;
     /*CSS transition help: CSS Tricks
     url: https://css-tricks.com/almanac/properties/t/transition/
     */
 }
-
 
 .feature-img-div:hover {
     background-color: #2d3c49;
@@ -108,7 +84,7 @@ hr {
 }
 
 #project1, #project2, #project3 {    
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 5px 3px #2d3c49;
@@ -116,7 +92,7 @@ hr {
 
 figcaption {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 a {
@@ -136,103 +112,17 @@ a {
 p {
     padding: 0;
     margin: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.social-media-div {
+    text-align: center;
 }
 
 .social-media-icons {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0;
-    margin: 0;
-}
-
-#linkedin, #github, #twitter {
-    margin-right: 0.3em;
+    text-align: center;
+    margin-right: 0.5em;
     margin-left: 0.5em;
-}
-
-
-/***********************
-    Media Quries
-************************/
-@media screen and (min-width: 200px) and (max-width: 350px) {
-    #dev-name {
-        font-size: 1.1em;
-    }
-
-    #dev-title {
-        font-size: 0.7em;
-    }
-}
-
-@media screen and (min-width: 300px) and (max-width: 400px) {    
-    #featured-work-h2 {
-       text-align: center;
-       font-size: 1.5em;
-   }
-   
-    .feature-img-div {
-        width: 100%;
-        height: auto;
-    }
-
-    figcaption {
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (min-width: 401px) and (max-width: 500px) {
-    .feature-img-div {
-        width: 90%;
-        height: auto;
-    }
-
-    #featured-work-h2 {
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 501px) and (max-width: 600px) {
-    .feature-img-div {
-        width: 80%;
-        height: auto;
-    }
-
-    #featured-work-h2 {
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 700px) {
-    .feature-img-div {
-        width: 70%;
-        height: auto;
-    }
-
-    #featured-work-h2 {
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 701px) and (max-width: 800px) {
-    .feature-img-div {
-        width: 60%;
-        height: auto;
-    }
-
-    #featured-work-h2 {
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 801px) and (max-width: 850px) {
-    .feature-img-div {
-        width: 50%;
-        height: auto;
-    }
-
-    #featured-work-h2 {
-        text-align: center;
-    }
+    font-size: 1.4em;
 }
