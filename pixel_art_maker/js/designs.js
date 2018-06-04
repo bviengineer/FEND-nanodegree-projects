@@ -1,33 +1,27 @@
 // SELECTIONS //
+const color = document.getElementById("colorPicker"),
+      form = document.getElementById("sizePicker"),
+      canvasHeight = document.getElementById("inputHeight"),
+      canvasWidth = document.getElementById("inputWidth");
 
-//color input
-const color = document.getElementById("colorPicker");
+let submitButton = document.getElementById("submit"),
+    myCanvas = document.getElementById("pixelCanvas");
 
-//size input
-const canvasHeight = document.getElementById("inputHeight");
-const canvasWidth = document.getElementById("inputWidth");
-
-//submit button
-let submitButton = document.getElementById("submit");
-
-//design canvas
-let myCanvas = document.getElementById("pixelCanvas");
-
-// FUNCTIONS & LISTENERS //
-
-//Code help: https://www.w3schools.com/jsref/event_preventdefault.asp
-// document.getElementById("sizePicker").addEventListener("click", function(formEvent) {
-//   console.log(formEvent);
-//   formEvent.preventDefault();
-// });
+    
+// FUNCTION(S) & LISTENERS //
 
 // When size is submitted by the user, call makeGrid()
-submitButton.addEventListener("click", function(formEvent){
+submitButton.addEventListener("click", function(){
   makeGrid();
+
+  form.addEventListener("click", function(event) {
+    event.preventDefault();
+    console.log(event);
+  });
+
 });
 
 function makeGrid() {
-  // Your code goes here!
     let canvasRow = 0;
     let canvasCol = 0;
     
@@ -39,4 +33,5 @@ function makeGrid() {
     }    
   }
 } 
+
   
