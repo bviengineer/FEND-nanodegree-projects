@@ -7,7 +7,7 @@ const color = document.getElementById("colorPicker"),
 let submitButton = document.getElementById("submit"),
     myCanvas = document.getElementById("pixelCanvas");
 
-    
+
 // FUNCTION(S) & LISTENERS //
 
 // When size is submitted by the user, call makeGrid()
@@ -16,15 +16,12 @@ submitButton.addEventListener("click", function(){
 
   form.addEventListener("click", function(event) {
     event.preventDefault();
-    console.log(event);
+    console.log(event); //remove before project delivery 
   });
 
 });
 
-function makeGrid() {
-    let canvasRow = 0;
-    let canvasCol = 0;
-    
+function makeGrid() {    
   for (let rows = 0; rows < canvasHeight.value; rows++) {
     canvasRow = myCanvas.insertRow(rows);
     
