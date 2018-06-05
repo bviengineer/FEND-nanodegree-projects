@@ -6,29 +6,36 @@ const color = document.getElementById("colorPicker"),
 
 let submitButton = document.getElementById("submit"),
     myCanvas = document.getElementById("pixelCanvas");
-
-
+  
+    
 // FUNCTION(S) & LISTENERS //
-
-// When size is submitted by the user, call makeGrid()
 submitButton.addEventListener("click", function(){
   makeGrid();
-
-  form.addEventListener("click", function(event) {
-    event.preventDefault();
-    console.log(event); //remove before project delivery 
-  });
-
-});
-
-function makeGrid() {    
-  for (let rows = 0; rows < canvasHeight.value; rows++) {
-    canvasRow = myCanvas.insertRow(rows);
-    
-    for (let cols = 0; cols < canvasWidth.value; cols++) {
-      canvasCol = canvasRow.insertCell(cols);
-    }    
-  }
-} 
-
   
+  form.addEventListener("click", function(event) {
+    event.preventDefault(); 
+  }); //END form addEventListener
+}); //END submitButton addEventListener
+
+function makeGrid(){
+  for (let rows = 0; rows < canvasHeight.value; rows++) {
+    let canvasRow = myCanvas.insertRow(rows);
+    for (let cols = 0; cols < canvasWidth.value; cols++) {
+      let canvasCol = canvasRow.insertCell(cols);
+    } //END canvasWidth
+  } //END canvasHeight
+} // END makeGrid()
+
+// Color individual cells
+myCanvas.addEventListener("click", function(event){
+  event.target.style.backgroundColor = color.value;
+});//END myCanvas addEventListener
+
+// END SCRIPT
+
+/*
+
+PROUD MOMENT: These two lines of statements were instrumental in developing the code above that targets individual cells to color and remains noted here as a personal reminder.  
+          console.log(myCanvas.children[0].childNodes); 
+          console.log(event); 
+*/
